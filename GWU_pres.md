@@ -7,23 +7,33 @@ _don't typecast me, bro_
 
 Postdoctoral Fellow, National Institutes of Health, National Institute of Diabetes and Digestive and Kidney Diseases, Bethesda, MD  
 
-====
+====*
+### C.S. conceptions
+!(images/boring_computer.gif) <<height: 250px>> What I thought it was...
+!(images/actual_computer.gif) <<height: 250px>> What it actually is...
+====+
+!(images/excited_computer.gif) <<height: 350px>> Why I do it...
+====*
 
-# Outline
+## Outline
 
-1. today-AI-learned
-3. Godwin's law?
-2. github?
-3. Encyclopedia of Finite Graphs
-4. Code linguistics
-5. tor-spiders
-6. Colorless green ideas
-7. transorthogonal linguistics
-8. Protein folding / crowding
-9. Protein networks?
-10. Ising model topology
-11. Electrostatics of proteins
-12. Hack && Tell
+#### [Science](#Science)
+
+#### [Machine Learning](#Machine_Learning)
+
+#### [Public Relations](#Public_Relations)
+
+====[Science]
+
+{"include":"science.md"}
+
+=====[Machine_Learning]
+
+{"include":"machine_learning.md"}
+
+=====[Public_Relations]
+
+{"include":"public_relations.md"}
 
 ====
 
