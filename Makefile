@@ -1,4 +1,4 @@
-title  = "How To CS: Don't typecast me bro"
+title  = "How I Computer Science"
 author = "Travis Hoppe"
 
 target = "GWU_pres.md"
