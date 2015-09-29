@@ -496,7 +496,7 @@ How do we model <em>many</em> protein-protein interactions?<br>Can we <strong>pr
     </a>
     <figcaption>Bovine Serum Albumin<br><a href="http://www.rcsb.org/pdb/explore/explore.do?structureId=3v03">PDB:3V03</a></figcaption>
     </figure>
-</section><section  data-transition="slide" class="vertical-slide">
+</section><section  data-transition="convex" class="vertical-slide">
 <p>
 <h2>Where does CS come into play?</h2></p>
 <br>
@@ -506,7 +506,7 @@ How do we model <em>many</em> protein-protein interactions?<br>Can we <strong>pr
 <li>Scaling up!</li></ol>
 </section>
 </section><section class="vertical-stack">
-<section id="Machine_Learning" data-transition="slide" class="vertical-slide">
+<section id="Machine_Learning" data-transition="convex" class="vertical-slide">
 <p>
 <h1>Machine Learning</h1><h2>today-AI-learned</h2></p>
 <br>
@@ -524,7 +524,7 @@ How do we model <em>many</em> protein-protein interactions?<br>Can we <strong>pr
 <br>
 <p>
 <div class="reference_footnote">Not talking about <a href="https://github.com/thoppe/transorthogonal-linguistics">transorthogonal linguistics</a>, <a href="https://github.com/thoppe/Colorless-Green-Ideas">colorless green ideas</a>, <a href="https://github.com/thoppe/code-linguistics">code linguistics</a>, or <a href="http://thoppe.github.io/godwins_law/#/">Godwin's Law</a>...</div></p>
-</section><section  data-transition="slide" class="vertical-slide">
+</section><section  data-transition="convex" class="vertical-slide">
 <p>
 <h1>The goal</h1></p>
 <br>
@@ -533,7 +533,7 @@ How do we model <em>many</em> protein-protein interactions?<br>Can we <strong>pr
 <br>
 <p>
 <div class="reference_footnote">Requires a corpus of interesting things...</div></p>
-</section><section  data-transition="slide" class="vertical-slide">
+</section><section  data-transition="convex" class="vertical-slide">
 <p>
 <h2>Supervised learning</h2><strong><a href="http://www.reddit.com/r/todayilearned/">r/TIL</a></strong>, a subreddit short for <em>Today I Learned</em></p>
 <figure>
@@ -542,7 +542,7 @@ How do we model <em>many</em> protein-protein interactions?<br>Can we <strong>pr
     </a>
     
     </figure>
-</section><section  data-transition="slide" class="vertical-slide">
+</section><section  data-transition="convex" class="vertical-slide">
 <p>
 <h2>Keep only Wikipedia data</h2>Filter for consistent writing style...</p>
 <figure>
@@ -553,7 +553,7 @@ How do we model <em>many</em> protein-protein interactions?<br>Can we <strong>pr
     </figure>
 </section>
 </section><section class="vertical-stack">
-<section  data-transition="slide" class="vertical-slide">
+<section  data-transition="convex" class="vertical-slide">
 <p>
 <h2>Data collection</h2></p>
 <br>
@@ -565,7 +565,7 @@ Download Wikipedia<br>Download all posts with <code>score>1000</code> for 2013 a
 <br>
 <p>
 <div class="reference_footnote">*Assume that most of Wikipedia isn't interesting...</div></p>
-</section><section  data-transition="slide" class="vertical-slide">
+</section><section  data-transition="convex" class="vertical-slide">
 <p>
 <h2>Data Wrangling</h2><h3>Tokenize</h3></p>
 <pre><code class=python>&gt;&gt; &quot;Good muffins cost $3.88\n in New York&quot;
@@ -580,7 +580,7 @@ Download Wikipedia<br>Download all posts with <code>score>1000</code> for 2013 a
 'faction'</code></pre>
 <p>
 <h3>"Entropy" vectors</h3>counts the uniqueness of each word to the rest of the entry,<br>local <code>TF-IDF</code> (term frequency-inverse document frequency)</p>
-</section><section  data-transition="slide" class="vertical-slide">
+</section><section  data-transition="convex" class="vertical-slide">
 <p>
 <h2>Feature generation</h2>Used Word2Vec (developed by Google),<br>weighted by local article <code>TF-IDF</code></p>
 <br>
@@ -595,7 +595,7 @@ array([-0.00449447, -0.00310097,  0.02421786, ...], dtype=float32)</code></pre>
 <br>
 <p>
 Uses far fewer features to store relationships between words!</p>
-</section><section  data-transition="slide" class="vertical-slide">
+</section><section  data-transition="convex" class="vertical-slide">
 <p>
 <h2>Modeling training</h2>Used <a href="http://scikit-learn.org/stable/modules/ensemble.html">Extremely Randomized Trees</a>, variant of Random Tree classifier.</p>
 <pre><code class=python>Training classifier
@@ -608,13 +608,13 @@ Test Accuracy: 0.878;    Test Accuracy on TP: 0.116;   Test Accuracy on TN: 0.99
     </figure>
 </section>
 </section><section class="vertical-stack">
-<section  data-transition="slide" class="vertical-slide">
+<section  data-transition="convex" class="vertical-slide">
 <p>
 <h1>Does it work?</h1><em>yes! look at all that sweet front-page karma...</em></p>
 <br>
 <p>
 <a href="https://www.reddit.com/r/todayilearned/comments/37bvmu/til_the_founder_of_japans_mcdonalds_stated/">TIL The Founder Of Japans Mcdonalds Stated</a> | 4726<br><a href="https://www.reddit.com/r/todayilearned/comments/3eg5js/til_mike_kurtz_an_american_burglar_found_out_that/">TIL Mike Kurtz An American Burglar Found Out That</a> | 4123<br><a href="https://www.reddit.com/r/todayilearned/comments/38x454/til_a_woman_that_reported_100_incidents_of/">TIL A Woman That Reported 100 Incidents Of</a> | 2899<br><a href="https://www.reddit.com/r/todayilearned/comments/3fvl39/til_during_the_sentencing_of_his_war_crimes_trial/">TIL During The Sentencing Of His War Crimes Trial</a> | 1551<br><a href="https://www.reddit.com/r/todayilearned/comments/36ra0w/til_that_art_spiegelman_the_creator_of_maus_a/">TIL That Art Spiegelman The Creator Of Maus A</a> | 1144<br><a href="https://www.reddit.com/r/todayilearned/comments/3cayy3/til_that_once_officially_labelled_as_retarded/">TIL That Once Officially Labeled As Retarded</a> | 640<br><a href="https://www.reddit.com/r/todayilearned/comments/3cjy9k/til_before_world_war_ii_it_was_very_rare_for/">TIL Before World War Ii It Was Very Rare For</a> | 498<br><a href="https://www.reddit.com/r/todayilearned/comments/38iqur/til_that_a_study_showed_those_with_a_distressed/">TIL That A Study Showed Those With A Distressed</a> | 142<br><a href="https://www.reddit.com/r/todayilearned/comments/3e2lw2/til_frankie_fraser_a_notorious_english_gangster/">TIL Frankie Fraser A Notorious English Gangster</a> | 135<br><a href="https://www.reddit.com/r/todayilearned/comments/362d4l/til_rafael_quintero_a_mexican_drug_trafficker/">TIL Rafael Quintero A Mexican Drug Trafficker</a> | 68<br>...</p>
-</section><section  data-transition="slide" class="vertical-slide">
+</section><section  data-transition="convex" class="vertical-slide">
 <p>
 <h3>AI vs. Human (Turing test pt. 1)</h3></p>
 <figure>
@@ -623,7 +623,7 @@ Test Accuracy: 0.878;    Test Accuracy on TP: 0.116;   Test Accuracy on TN: 0.99
     </a>
     <figcaption>I can do (almost) anything you can do better...</figcaption>
     </figure>
-</section><section  data-transition="slide" class="vertical-slide">
+</section><section  data-transition="convex" class="vertical-slide">
 <p>
 <h2>Turing test pt. 2</h2>After three months and 60 submissions, I revealed to Reddit<br>the true nature of <code>/u/possible_urban_king</code>.<br>The account was promptly banned from <code>r/todayIlearned</code> ...<br><em>thanks anonymous moderator for helping prove the test!</em><div class="fragment"><br><h4>The Turing test is a necessary but not</h4><h4>sufficient test for artificial intelligence.</h4></p>
 <figure>
@@ -640,7 +640,7 @@ Test Accuracy: 0.878;    Test Accuracy on TP: 0.116;   Test Accuracy on TN: 0.99
     </figure>
 <p>
 </div></p>
-</section><section  data-transition="slide" class="vertical-slide">
+</section><section  data-transition="convex" class="vertical-slide">
 <p>
 <h2>Where does CS come into play?</h2></p>
 <br>
@@ -650,7 +650,7 @@ Test Accuracy: 0.878;    Test Accuracy on TP: 0.116;   Test Accuracy on TN: 0.99
 <li>Validation and statistics.</li></ol>
 </section>
 </section><section class="vertical-stack">
-<section id="Public_Relations" data-transition="slide" class="vertical-slide">
+<section id="Public_Relations" data-transition="convex" class="vertical-slide">
 <p>
 <h3>Hacks!</h3></p>
 <ol><li>tor-spiders</li>
@@ -659,7 +659,7 @@ Test Accuracy: 0.878;    Test Accuracy on TP: 0.116;   Test Accuracy on TN: 0.99
 <li>github?</li></ol>
 </section>
 </section><section class="vertical-stack">
-<section  data-transition="slide" class="vertical-slide">
+<section  data-transition="convex" class="vertical-slide">
 <p>
 <h1>Thanks you!</h1></p>
 </section>

@@ -83,7 +83,7 @@ Can we *predict* aggregates from experimental structure?
 !(images/macrocharge/1W6Z_cartoon.png) <<height:225px;transparent>> Lysozyme<br>[PDB:1W6Z](http://www.rcsb.org/pdb/explore/explore.do?structureId=1w6z)
 !(images/macrocharge/3V03_cartoon.png) <<height:225px;transparent>> Bovine Serum Albumin<br>[PDB:3V03](http://www.rcsb.org/pdb/explore/explore.do?structureId=3v03)
 
-====*<<transition:slide>>
+====*<<transition:convex>>
 
 ## Where does CS come into play?
 
