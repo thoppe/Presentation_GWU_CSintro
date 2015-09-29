@@ -4,7 +4,7 @@ My Background: PhD, MS Physics, BS Mathematics
 
 
 ## Protein "Physics"
-Folding, interfaces, aggregation, electrostatics, statisical mechanics, ...
+Folding, interfaces, aggregation, electrostatics, statistical mechanics, ...
 <br>
 
 && Not talking about [Ising model topology](http://thoppe.github.io/Presentation_Telluride_2014_WL_Topology/#/), [hacking graph theory](https://github.com/thoppe/Encyclopedia-of-Finite-Graphs), or [other interesting ventures](https://github.com/thoppe/Presentation_Irrelevant_Topics_In_Physics)...
@@ -88,6 +88,6 @@ Can we *predict* aggregates from experimental structure?
 ## Where does CS come into play?
 
 1. Be able to say what is possible (and what isn't!)
-2. Algorimic design (linear algebra, molecular dynamics...)
-3. Prediciting runtime (non-trivial at model stage!)
+2. Algorithmic design (linear algebra, molecular dynamics...)
+3. Predicting run-time (non-trivial at model stage!)
 3. Scaling up! 

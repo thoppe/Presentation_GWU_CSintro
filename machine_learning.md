@@ -123,4 +123,4 @@ _thanks anonymous moderator for helping prove the test!_
 1. Natural language parsing
 2. Supervised and unsupervised learning
 1. Knowing the right algorithm and it's limitations...
-2. Validation and statisitics.
+2. Validation and statistics.
