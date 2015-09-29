@@ -41,18 +41,18 @@
 	<section class="vertical-stack">
 <section   class="vertical-slide">
 <p>
-<h2>How I "Computer Science"</h2><em>don't typecast me, bro</em></p>
+<h2>How I "Computer Science"</h2></p>
 <br>
 <hr>
 <p>
-<h3><a href="http://thoppe.github.io/">Travis Hoppe</a>, PhD</h3></p>
+<h3><a href="http://thoppe.github.io/">Travis Hoppe</a>, PhD</h3><a href="https://twitter.com/metasemantic">@metasemantic</a></p>
 <hr>
 <br>
 <p>
 Postdoctoral Fellow, National Institutes of Health, National Institute of Diabetes and Digestive and Kidney Diseases, Bethesda, MD</p>
 </section><section   class="vertical-slide">
 <p>
-<h3>C.S. conceptions</h3></p>
+<h3>C.S. (mis)conceptions</h3></p>
 <figure>
     <a href="images/boring_computer.gif">
     <img class="" src="images/boring_computer.gif" height="250px">
@@ -80,13 +80,13 @@ Postdoctoral Fellow, National Institutes of Health, National Institute of Diabet
 <h2>Outline</h2></p>
 <br>
 <p>
-<h4><a href="#Science">Science</a></h4></p>
+<h3><a href="#Science">Science</a></h3></p>
 <br>
 <p>
-<h4><a href="#Machine_Learning">Machine Learning</a></h4></p>
+<h3><a href="#Machine_Learning">Machine Learning</a></h3></p>
 <br>
 <p>
-<h4><a href="#Public_Relations">Public Relations</a></h4></p>
+<h3><a href="#Public_Relations">Public Relations</a></h3></p>
 </section>
 </section><section class="vertical-stack">
 <section id="Science"  class="vertical-slide">
@@ -496,7 +496,7 @@ How do we model <em>many</em> protein-protein interactions?<br>Can we <strong>pr
     </a>
     <figcaption>Bovine Serum Albumin<br><a href="http://www.rcsb.org/pdb/explore/explore.do?structureId=3v03">PDB:3V03</a></figcaption>
     </figure>
-</section><section  data-transition="fade" class="vertical-slide">
+</section><section  data-transition="slide" class="vertical-slide">
 <p>
 <h2>Where does CS come into play?</h2></p>
 <br>
@@ -506,16 +506,151 @@ How do we model <em>many</em> protein-protein interactions?<br>Can we <strong>pr
 <li>Scaling up!</li></ol>
 </section>
 </section><section class="vertical-stack">
-<section id="Machine_Learning" data-transition="fade" class="vertical-slide">
+<section id="Machine_Learning" data-transition="slide" class="vertical-slide">
 <p>
-<h3>Machine Learning</h3></p>
-<ol><li>Code linguistics</li>
-<li>transorthogonal linguistics</li>
-<li>Colorless green ideas</li>
-<li>today-AI-learned</li></ol>
+<h1>Machine Learning</h1><h2>today-AI-learned</h2></p>
+<br>
+<p>
+<strong><a href="http://www.buzzfeed.com/hamzashaban/today-ai-learned#.glVDa6wR2">Meet The Man Who Gamed Reddit With A Bot</a></strong></p>
+<figure>
+    <a href="images/BuzzFeed_logo.png">
+    <img class="transparent_image" src="images/BuzzFeed_logo.png" width="600px">
+    </a>
+    
+    </figure>
+<br>
+<p>
+</p>
+<br>
+<p>
+<div class="reference_footnote">Not talking about <a href="https://github.com/thoppe/transorthogonal-linguistics">transorthogonal linguistics</a>, <a href="https://github.com/thoppe/Colorless-Green-Ideas">colorless green ideas</a>, <a href="https://github.com/thoppe/code-linguistics">code linguistics</a>, or <a href="http://thoppe.github.io/godwins_law/#/">Godwin's Law</a>...</div></p>
+</section><section  data-transition="slide" class="vertical-slide">
+<p>
+<h1>The goal</h1></p>
+<br>
+<p>
+<h2>Train a machine to find</h2><h2>new & interesting things</h2></p>
+<br>
+<p>
+<div class="reference_footnote">Requires a corpus of interesting things...</div></p>
+</section><section  data-transition="slide" class="vertical-slide">
+<p>
+<h2>Supervised learning</h2><strong><a href="http://www.reddit.com/r/todayilearned/">r/TIL</a></strong>, a subreddit short for <em>Today I Learned</em></p>
+<figure>
+    <a href="images/TAIL/TIL_example.png">
+    <img class="" src="images/TAIL/TIL_example.png" >
+    </a>
+    
+    </figure>
+</section><section  data-transition="slide" class="vertical-slide">
+<p>
+<h2>Keep only Wikipedia data</h2>Filter for consistent writing style...</p>
+<figure>
+    <a href="images/TAIL/TIL_example2.png">
+    <img class="" src="images/TAIL/TIL_example2.png" >
+    </a>
+    
+    </figure>
 </section>
 </section><section class="vertical-stack">
-<section id="Public_Relations" data-transition="fade" class="vertical-slide">
+<section  data-transition="slide" class="vertical-slide">
+<p>
+<h2>Data collection</h2></p>
+<br>
+<p>
+Download Wikipedia<br>Download all posts with <code>score>1000</code> for 2013 and 2014 (~5000)<br>Cross-reference each post to the correct Wikipedia <em>paragraph</em><br>Build True positives (known TIL's)<br>Build Decoys (other paragraphs in TIL's)<br>Build unknown samples (rest of Wikipedia*)</p>
+<br>
+<p>
+<h3>from python import science</h3><code>sqlite3</code>, <code>requests</code>, <code>bs4</code>, <code>pandas</code>, <code>numpy</code>, <code>scikit-learn</code>,<br><code>gensim</code>, <code>praw</code>, <code>wikipedia</code>, <code>nltk</code>, <code>stemmming.porter2</code></p>
+<br>
+<p>
+<div class="reference_footnote">*Assume that most of Wikipedia isn't interesting...</div></p>
+</section><section  data-transition="slide" class="vertical-slide">
+<p>
+<h2>Data Wrangling</h2><h3>Tokenize</h3></p>
+<pre><code class=python>&gt;&gt; &quot;Good muffins cost $3.88\n in New York&quot;
+['Good', 'muffins', 'cost', 'TOKEN_MONEY', 'in', 'New', 'York', 'TOKEN_EOS']</code></pre>
+<p>
+<h3>Remove "stop words"</h3></p>
+<pre><code class=python>&gt;&gt; &quot;I sat on the rock&quot;
+['I', 'sat', 'on', 'rock']</code></pre>
+<p>
+<h3>Stem words</h3></p>
+<pre><code class=python>&gt;&gt; stem(&quot;factionally&quot;)
+'faction'</code></pre>
+<p>
+<h3>"Entropy" vectors</h3>counts the uniqueness of each word to the rest of the entry,<br>local <code>TF-IDF</code> (term frequency-inverse document frequency)</p>
+</section><section  data-transition="slide" class="vertical-slide">
+<p>
+<h2>Feature generation</h2>Used Word2Vec (developed by Google),<br>weighted by local article <code>TF-IDF</code></p>
+<br>
+<pre><code class=python>&gt;&gt;&gt; model.most_similar(positive=['woman', 'king'], negative=['man'])
+[('queen', 0.50882536), ...]
+&gt;&gt;&gt; model.doesnt_match(&quot;breakfast cereal dinner lunch&quot;.split())
+'cereal'
+&gt;&gt;&gt; model.similarity('woman', 'man')
+0.73723527
+&gt;&gt;&gt; model['computer']  # raw numpy vector of a word
+array([-0.00449447, -0.00310097,  0.02421786, ...], dtype=float32)</code></pre>
+<br>
+<p>
+Uses far fewer features to store relationships between words!</p>
+</section><section  data-transition="slide" class="vertical-slide">
+<p>
+<h2>Modeling training</h2>Used <a href="http://scikit-learn.org/stable/modules/ensemble.html">Extremely Randomized Trees</a>, variant of Random Tree classifier.</p>
+<pre><code class=python>Training classifier
+Test Accuracy: 0.878;    Test Accuracy on TP: 0.116;   Test Accuracy on TN: 0.998</code></pre>
+<figure>
+    <a href="images/TAIL/ROC_ExtraTreeClass.png">
+    <img class="" src="images/TAIL/ROC_ExtraTreeClass.png" height="550px">
+    </a>
+    <figcaption>Receiver Operating Curve</figcaption>
+    </figure>
+</section>
+</section><section class="vertical-stack">
+<section  data-transition="slide" class="vertical-slide">
+<p>
+<h1>Does it work?</h1><em>yes! look at all that sweet front-page karma...</em></p>
+<br>
+<p>
+<a href="https://www.reddit.com/r/todayilearned/comments/37bvmu/til_the_founder_of_japans_mcdonalds_stated/">TIL The Founder Of Japans Mcdonalds Stated</a> | 4726<br><a href="https://www.reddit.com/r/todayilearned/comments/3eg5js/til_mike_kurtz_an_american_burglar_found_out_that/">TIL Mike Kurtz An American Burglar Found Out That</a> | 4123<br><a href="https://www.reddit.com/r/todayilearned/comments/38x454/til_a_woman_that_reported_100_incidents_of/">TIL A Woman That Reported 100 Incidents Of</a> | 2899<br><a href="https://www.reddit.com/r/todayilearned/comments/3fvl39/til_during_the_sentencing_of_his_war_crimes_trial/">TIL During The Sentencing Of His War Crimes Trial</a> | 1551<br><a href="https://www.reddit.com/r/todayilearned/comments/36ra0w/til_that_art_spiegelman_the_creator_of_maus_a/">TIL That Art Spiegelman The Creator Of Maus A</a> | 1144<br><a href="https://www.reddit.com/r/todayilearned/comments/3cayy3/til_that_once_officially_labelled_as_retarded/">TIL That Once Officially Labeled As Retarded</a> | 640<br><a href="https://www.reddit.com/r/todayilearned/comments/3cjy9k/til_before_world_war_ii_it_was_very_rare_for/">TIL Before World War Ii It Was Very Rare For</a> | 498<br><a href="https://www.reddit.com/r/todayilearned/comments/38iqur/til_that_a_study_showed_those_with_a_distressed/">TIL That A Study Showed Those With A Distressed</a> | 142<br><a href="https://www.reddit.com/r/todayilearned/comments/3e2lw2/til_frankie_fraser_a_notorious_english_gangster/">TIL Frankie Fraser A Notorious English Gangster</a> | 135<br><a href="https://www.reddit.com/r/todayilearned/comments/362d4l/til_rafael_quintero_a_mexican_drug_trafficker/">TIL Rafael Quintero A Mexican Drug Trafficker</a> | 68<br>...</p>
+</section><section  data-transition="slide" class="vertical-slide">
+<p>
+<h3>AI vs. Human (Turing test pt. 1)</h3></p>
+<figure>
+    <a href="images/TAIL/vs_human.png">
+    <img class="" src="images/TAIL/vs_human.png" height="650px">
+    </a>
+    <figcaption>I can do (almost) anything you can do better...</figcaption>
+    </figure>
+</section><section  data-transition="slide" class="vertical-slide">
+<p>
+<h2>Turing test pt. 2</h2>After three months and 60 submissions, I revealed to Reddit<br>the true nature of <code>/u/possible_urban_king</code>.<br>The account was promptly banned from <code>r/todayIlearned</code> ...<br><em>thanks anonymous moderator for helping prove the test!</em><div class="fragment"><br><h4>The Turing test is a necessary but not</h4><h4>sufficient test for artificial intelligence.</h4></p>
+<figure>
+    <a href="images/TAIL/AI_2.gif">
+    <img class="" src="images/TAIL/AI_2.gif" height="300px">
+    </a>
+    <figcaption>Artificial Intelligence</figcaption>
+    </figure>
+<figure>
+    <a href="images/TAIL/AI_1.gif">
+    <img class="" src="images/TAIL/AI_1.gif" height="300px">
+    </a>
+    <figcaption>Machine Learning</figcaption>
+    </figure>
+<p>
+</div></p>
+</section><section  data-transition="slide" class="vertical-slide">
+<p>
+<h2>Where does CS come into play?</h2></p>
+<br>
+<ol><li>Natural language parsing</li>
+<li>Supervised and unsupervised learning</li>
+<li>Knowing the right algorithm and it's limitations...</li>
+<li>Validation and statisitics.</li></ol>
+</section>
+</section><section class="vertical-stack">
+<section id="Public_Relations" data-transition="slide" class="vertical-slide">
 <p>
 <h3>Hacks!</h3></p>
 <ol><li>tor-spiders</li>
@@ -524,7 +659,7 @@ How do we model <em>many</em> protein-protein interactions?<br>Can we <strong>pr
 <li>github?</li></ol>
 </section>
 </section><section class="vertical-stack">
-<section  data-transition="fade" class="vertical-slide">
+<section  data-transition="slide" class="vertical-slide">
 <p>
 <h1>Thanks you!</h1></p>
 </section>

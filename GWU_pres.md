@@ -1,14 +1,14 @@
 ## How I "Computer Science"
-_don't typecast me, bro_
 
 ----------
 ### [Travis Hoppe](http://thoppe.github.io/), PhD
+[@metasemantic](https://twitter.com/metasemantic)
 ----------
 
 Postdoctoral Fellow, National Institutes of Health, National Institute of Diabetes and Digestive and Kidney Diseases, Bethesda, MD  
 
 ====*
-### C.S. conceptions
+### C.S. (mis)conceptions
 !(images/boring_computer.gif) <<height: 250px>> What I thought it was...
 !(images/actual_computer.gif) <<height: 250px>> What it actually is...
 ====+
@@ -17,11 +17,11 @@ Postdoctoral Fellow, National Institutes of Health, National Institute of Diabet
 
 ## Outline
 
-#### [Science](#Science)
+### [Science](#Science)
 
-#### [Machine Learning](#Machine_Learning)
+### [Machine Learning](#Machine_Learning)
 
-#### [Public Relations](#Public_Relations)
+### [Public Relations](#Public_Relations)
 
 ====[Science]
 
