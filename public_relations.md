@@ -1,10 +1,7 @@
-x
-====
-
 # Public Relations
 ### Build a portfolio
 ### Network with others
-
+====+
 !(images/PR/confused.gif)  <<height:300px>> Before you start ...
 !(images/PR/high_five.gif) <<height:300px>> and once you get out there...
 
@@ -32,3 +29,15 @@ x
 ### Meetups and Hackathons
 ### [Meetup](http://www.meetup.com/)
 !(images/PR/meetup.png)
+
+  -
+  name: @metasemantic
+  link: https://twitter.com/metasemantic
+
+====
+
+Hack && Tell DC
+
+note: Add logo here!
+note: add link to next talk!
+
