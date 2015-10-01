@@ -37,6 +37,9 @@ Postdoctoral Fellow, National Institutes of Health, National Institute of Diabet
 
 ====
 
-# Thanks you!
+# Thanks, you!
 
-Feed back form?
+
+For class participation credit, fill out this questionnaire:
+
+### [Presentation Review](https://docs.google.com/forms/d/15a1vwYt8QsEmse3boSS8MSz9W3deHv61fM5uhzkLOo8/viewform?usp=send_form)
