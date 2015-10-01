@@ -1,9 +1,10 @@
 # Machine Learning
-## today-AI-learned
+
 
 *[Meet The Man Who Gamed Reddit With A Bot](http://www.buzzfeed.com/hamzashaban/today-ai-learned#.glVDa6wR2)*
-!(images/BuzzFeed_logo.png) <<width:600px; transparent>> 
+!(images/BuzzFeed_logo.png) <<width:700px; transparent>> 
 
+<br>
 <br>
 <br>
 
@@ -83,7 +84,7 @@ Uses far fewer features to store relationships between words!
 Used [Extremely Randomized Trees](http://scikit-learn.org/stable/modules/ensemble.html), variant of Random Tree classifier.
     Training classifier
     Test Accuracy: 0.878;    Test Accuracy on TP: 0.116;   Test Accuracy on TN: 0.998
-!(images/TAIL/ROC_ExtraTreeClass.png) <<height:550px>> Receiver Operating Curve
+!(images/TAIL/ROC_ExtraTreeClass.png) <<height:550px>> [Receiver Operating Characteristic](https://en.wikipedia.org/wiki/Receiver_operating_characteristic)
 
 ====
 
@@ -120,7 +121,10 @@ _thanks anonymous moderator for helping prove the test!_
 
 ## Where does CS come into play?
 
-1. Natural language parsing
-2. Supervised and unsupervised learning
-1. Knowing the right algorithm and it's limitations...
-2. Validation and statistics
+Natural language parsing, [NLP](https://en.wikipedia.org/wiki/Natural_language_processing).
+
+[Supervised](https://en.wikipedia.org/wiki/Supervised_learning) and [unsupervised](https://en.wikipedia.org/wiki/Unsupervised_learning) learning.
+
+Knowing the right algorithm and it's limitations...
+
+Validation and statistics.

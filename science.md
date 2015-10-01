@@ -33,14 +33,12 @@ Folding, interfaces, aggregation, electrostatics, statistical mechanics, ...
 !(images/biochem/example_dimer.png)<<transparent;height:400px>> Binding, dimerization 
 !(images/biochem/abeta.png)<<transparent;height:400px>> Aggregation, Fibril formation
 
-====* !(images/biochem/zimmer_crowding.jpg)
+====* !(images/biochem/zimmer_crowding.jpg) <<transition:fade>>
 
 ## <div style="color:white;text-shadow: 2px 2px #000000;"> Protein interactions in a <br>crowded environment</div>
 
-!(images/biochem/ww_fold.m4v)<<transparent;height:350px>>
 !(images/biochem/example_dimer.png)<<transparent;height:350px>> 
-!(images/biochem/abeta.png)<<transparent;height:400px>>
-&& <div style="color:white;text-shadow: 2px 2px #000000;"> Background image from Harvard University, XVIVO Scientific Animation</div>
+
 
 ====
 
@@ -87,7 +85,12 @@ Can we *predict* aggregates from experimental structure?
 
 ## Where does CS come into play?
 
-1. Be able to say what is possible (and what isn't!)
-2. Algorithmic design (linear algebra, molecular dynamics...)
-3. Predicting run-time (non-trivial at model stage!)
-3. Scaling up! 
+Be able to say what is possible, and what isn't!
+
+Algorithmic design, ex. linear algebra, molecular dynamics...
+
+Hardware design, specialized hardware, ex. [Anton](https://en.wikipedia.org/wiki/Anton_(computer), [GRAPE](https://en.wikipedia.org/wiki/Gravity_Pipe).
+
+Predicting run-time (non-trivial at model stage!).
+
+Scaling up! 
