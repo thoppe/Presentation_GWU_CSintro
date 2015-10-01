@@ -125,6 +125,6 @@ Natural language parsing, [NLP](https://en.wikipedia.org/wiki/Natural_language_p
 
 [Supervised](https://en.wikipedia.org/wiki/Supervised_learning) and [unsupervised](https://en.wikipedia.org/wiki/Unsupervised_learning) learning.
 
-Knowing the right algorithm and it's limitations...
+Knowing the right algorithm and its limitations...
 
 Validation and statistics.
