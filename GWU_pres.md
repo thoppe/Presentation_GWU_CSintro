@@ -1,4 +1,4 @@
-## How I "Computer Science"
+## How I Computer Science
 
 ----------
 ### [Travis Hoppe](http://thoppe.github.io/), PhD
@@ -42,4 +42,6 @@ Postdoctoral Fellow, National Institutes of Health, National Institute of Diabet
 
 For class participation credit, fill out this questionnaire:
 
-### [Presentation Review](https://docs.google.com/forms/d/15a1vwYt8QsEmse3boSS8MSz9W3deHv61fM5uhzkLOo8/viewform?usp=send_form)
+###  Presentation Review
+###  [http://bit.ly/1KVprYC](http://bit.ly/1KVprYC)
+[permalink](https://docs.google.com/forms/d/15a1vwYt8QsEmse3boSS8MSz9W3deHv61fM5uhzkLOo8/viewform?usp=send_form)
